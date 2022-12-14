@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="ar">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>مدرسة علمني | صفحة الطالب</title>
+  </head>
+  <body data-spy="scroll" data-target=".navbar" data-offset="120">
+    <div class="container-fluid">
+      <section id="TopMenu" class="top-menu">
+        <div class="row">
+          <nav class="navbar navbar-expand-lg navbar-light bg-light w-100">
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-toggle="collapse"
+              data-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <b>
+              <a class="navbar-brand py-0 scroll" href="index.html">
+                <img src="images/logo.png" alt="مدرسة علمني" />
+              </a>
+            </b>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav mx-auto">
+                <li class="nav-item p-2">
+                  <a class="nav-link scroll" href="index.html">الرئيسية </a>
+                </li>
+                <li class="nav-item p-2">
+                  <a class="nav-link scroll" href="index.html#Activities"
+                    >نشاطاتنا</a
+                  >
+                </li>
+                <li class="nav-item p-2">
+                  <a class="nav-link scroll" href="index.html#Student"
+                    >طلابنا</a
+                  >
+                </li>
+                <li class="nav-item p-2">
+                  <a class="nav-link scroll" href="index.html#Stars"
+                    >نجوم المدرسة</a
+                  >
+                </li>
+                <li class="nav-item p-2">
+                  <a class="nav-link scroll" href="index.html#ContactUs"
+                    >تواصل معنا</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <a
+              class="login px-3 py-2 text-primary font-weight-bold border border-primary rounded"
+              href="#"
+              data-toggle="modal"
+              data-target="#loginModal"
+              >تسجيل الدخول</a
+            >
+            <a
+              class="px-3 py-2 text-primary font-weight-bold"
+              href="#"
+              >حساب جديد</a
+            >
+          </nav>
+
+          <!-- Modal -->
+          <div class="modal fade" id="loginModal">
+            <div class="modal-dialog modal-dialog-centered">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">
+                    تسجيل الدخول
+                  </h5>
+                  <button
+                    type="button"
+                    class="close btn-primary"
+                    data-dismiss="modal"
+                  >
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <form>
+                    <div class="form-group">
+                      <label for="email" class="col-form-label"
+                        >البريد الالكتروني</label
+                      >
+                      <input
+                        type="email"
+                        class="form-control"
+                        id="recipient-name"
+                      />
+                    </div>
+                    <div class="form-group">
+                      <label for="password" class="col-form-label"
+                        >كلمة المرور</label
+                      >
+                      <input
+                        type="password"
+                        class="form-control"
+                        id="password"
+                      />
+                    </div>
+                  </form>
+                </div>
+                <div class="modal-footer">
+                  <a href="#">نسيت كلمة المرور</a>
+                  <a href="account.html" class="mx-auto">انشاء حساب</a>
+                  <button type="button" class="btn btn-outline-primary">
+                    دخول
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section  class="account">
+        <h3>انشاء حساب جديد</h3>
+        <div class="container">
+          <div class="row">
+            <form class="col-6" id="commentForm">
+              <div class="form-row">
+                <div class="form-group col-md-6">
+                  <input type="text" class="form-control" id="inputName1" placeholder="الاسم الاول" />
+                </div>
+                <div class="form-group col-md-6">
+                  <input type="text" class="form-control" id="inputLastName" placeholder="الاسم الاخير "/>
+                </div>
+                <div class="form-group col-md-12">
+                  <input type="email" class="form-control text-right" id="inputEmail" placeholder=" الايميل الالكتروني"  />
+                </div>
+                <div class="form-group col-md-6">
+                  <input
+                    type="password"
+                    class="form-control text-right"
+                    id="inputPassword1"
+                    placeholder="كلمة المرور"
+                  />
+                </div>
+                <div class="form-group col-md-6">
+                  <input
+                    type="password2"
+                    class="form-control"
+                    id="inputPassword2"
+                    placeholder="تأكيد كلمة المرور"
+                  />
+                </div>
+              </div>
+              
+              <button type="submit" class="btn btn-primary">انشاء حساب</button>
+            </form>
+            
+          </div>
+        </div>
+      </section>
+
+      <footer class="fixed-bottom">
+        <div class="copyright text-center">
+          <p>جميع الحقوق محفوظة 2022</p>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>

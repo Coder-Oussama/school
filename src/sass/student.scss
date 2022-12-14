@@ -1,0 +1,112 @@
+@import "./variables";
+
+.studentField {
+  position: relative;
+  width: 100% !important;
+  text-align: right;
+  padding: 40px 0 !important;
+  margin-top: 70px !important;
+  background-color: $bg-color;
+  h3 {
+    font-size: 40px;
+    font-weight: bold;
+    color: #555;
+    margin-right: 20px;
+  }
+}
+
+.StudyTitle {
+  position: relative;
+  text-align: right;
+  padding: 40px 0 !important;
+  margin-top: 10px !important;
+  background-color: $bg-color;
+  h3 {
+    font-size: 40px;
+    font-weight: bold;
+    color: #555;
+    margin-right: 20px;
+  }
+  table {
+    font-size: 18px;
+    font-weight: bold;
+  }
+}
+
+section.option {
+  padding: 70px 0 0;
+  background-color: #f8f8f8;
+  z-index: -2;
+  position: relative;
+  text-align: right;
+   h3 {
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center;
+    color: #555;
+    margin-right: 20px;
+  }
+  .images {
+    position: absolute;
+    bottom: 150px;
+    z-index: -1;
+  }
+  .options {
+    margin-top: 40px;
+    margin-right: 40px;
+  }
+  .media {
+    margin-bottom: 60px;
+  }
+  h5 {
+    font-size: 30px;
+    line-height: 40px;
+    color: #141414;
+  }
+  p {
+    font-size: 20px;
+    line-height: 20px;
+    color: #757474;
+  }
+}
+
+@media (max-width: 990px) and (min-width: 768px) {
+  section.option {
+    padding: 40px 0 0;
+    .options {
+      .media {
+        margin-bottom: 30px;
+      }
+    }
+  }
+}
+
+@media (max-width: 767px) and (min-width: 576px) {
+  section.option {
+    .images {
+      bottom: -400px;
+    }
+    .options {
+      margin-bottom: 300px;
+    }
+  }
+}
+
+@media (max-width: 575px) {
+  section.option {
+    .images {
+      bottom: -400px;
+    }
+    .options {
+      margin-bottom: 300px;
+    }
+  }
+}
+
+@media (max-width: 500px) {
+  section.option {
+    .options {
+      margin-right: 0;
+    }
+  }
+}

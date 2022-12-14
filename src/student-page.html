@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="ar">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>مدرسة علمني | صفحة الطالب</title>
+  </head>
+  <body data-spy="scroll" data-target=".navbar" data-offset="120">
+    <div class="container-fluid">
+      <section id="TopMenu" class="top-menu">
+        <div class="row">
+          <nav class="navbar navbar-expand-lg navbar-light bg-light w-100">
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-toggle="collapse"
+              data-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <b>
+              <a class="navbar-brand py-0 scroll" href="index.html">
+                <img src="images/logo.png" alt="مدرسة علمني" />
+              </a>
+            </b>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav mx-auto">
+                <li class="nav-item p-2">
+                  <a class="nav-link scroll" href="index.html">الرئيسية </a>
+                </li>
+                <li class="nav-item p-2">
+                  <a class="nav-link scroll" href="index.html#Activities"
+                    >نشاطاتنا</a
+                  >
+                </li>
+                <li class="nav-item p-2">
+                  <a class="nav-link scroll" href="index.html#Student"
+                    >طلابنا</a
+                  >
+                </li>
+                <li class="nav-item p-2">
+                  <a class="nav-link scroll" href="index.html#Stars"
+                    >نجوم المدرسة</a
+                  >
+                </li>
+                <li class="nav-item p-2">
+                  <a class="nav-link scroll" href="index.html#ContactUs"
+                    >تواصل معنا</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <a
+              class="login px-3 py-2 text-primary font-weight-bold border border-primary rounded"
+              href="#"
+              data-toggle="modal"
+              data-target="#loginModal"
+              >تسجيل الدخول</a
+            >
+            <a
+              class="px-3 py-2 text-primary font-weight-bold"
+              href="account.html"
+              >حساب جديد</a
+            >
+          </nav>
+
+          <!-- Modal -->
+          <div class="modal fade" id="loginModal">
+            <div class="modal-dialog modal-dialog-centered">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">
+                    تسجيل الدخول
+                  </h5>
+                  <button
+                    type="button"
+                    class="close btn-primary"
+                    data-dismiss="modal"
+                  >
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <form>
+                    <div class="form-group">
+                      <label for="email" class="col-form-label"
+                        >البريد الالكتروني</label
+                      >
+                      <input
+                        type="email"
+                        class="form-control"
+                        id="recipient-name"
+                      />
+                    </div>
+                    <div class="form-group">
+                      <label for="password" class="col-form-label"
+                        >كلمة المرور</label
+                      >
+                      <input
+                        type="password"
+                        class="form-control"
+                        id="password"
+                      />
+                    </div>
+                  </form>
+                </div>
+                <div class="modal-footer">
+                  <a href="#">نسيت كلمة المرور</a>
+                  <a href="account.html" class="mx-auto">انشاء حساب</a>
+                  <button type="button" class="btn btn-outline-primary">
+                    دخول
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="studentField">
+        <h3>لمحة عامة حول الطالب</h3>
+        <div class="card my-5 mx-auto" style="max-width: 90%">
+          <div class="row no-gutters">
+            <div class="col-md-4">
+              <img src="./images/std3.jpg" class="card-img" alt="صورة الطالب" />
+            </div>
+            <div class="col-md-8">
+              <div class="card-body">
+                <h3 class="card-title text-right">أشرف مصطفى</h3>
+                <h5 class="card-text custom-birthday">
+                  <span class="font-weight-bold">ولد في :</span>
+                  09 اكتوبر 2015
+                </h5>
+                <h5 class="card-text">
+                  <span class="card-type font-weight-bold"> الصف :</span>
+                  الثالثة ابتدائي
+                </h5>
+                <h5 class="card-text">
+                  <span class="card-type font-weight-bold"> الهوايات :</span>
+                  المطالعة , ممراسة كرة القدم , الرسم.
+                </h5>
+                <h5 class="card-text mt-5">
+                  <small class="text-warning">صاحب المرتبة الاولى</small>
+                </h5>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="StudyTitle">
+        <h3>علامات الطالب</h3>
+        <div class="row">
+          <div class="col-10 mt-4 mr-4">
+            <table class="table">
+              <thead class="table-primary">
+                <tr>
+                  <th scope="col">المواد</th>
+                  <th scope="col">اللغة العربية</th>
+                  <th scope="col">الرياضيات</th>
+                  <th scope="col">التاريخ</th>
+                  <th scope="col">الجغرافيا</th>
+                  <th scope="col">التربية اسلامية</th>
+                  <th scope="col">الفنون</th>
+                </tr>
+              </thead>
+              <tbody class="table-light">
+                <tr>
+                  <th scope="row"> العلامات (على مئة)  </th>
+                  <td>95</td>
+                  <td>87</td>
+                  <td>90</td>
+                  <td>73</td>
+                  <td>91</td>
+                  <td>84</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+
+   <section class="option" id="option">
+     <h3>نصائح عامة للطلبة</h3>
+        <!-- start container -->
+        <div class="container">
+            <!-- start row -->
+            <div class="row">
+                <!-- start col -->
+                <div class="col-lg-7 order-lg-5 col-md-7 order-md-5">
+                    <!-- start options -->
+                    <div class="options">
+                        <!-- start media -->
+                        <div class="media">
+                            <img class="d-flex align-self-start ml-3" src="images/boy.png"
+                                alt="Generic placeholder image">
+                            <!-- start media-body -->
+                            <div class="media-body">
+                                <h5 class="mt-0">
+                                    المذاكرة الجماعية
+                                </h5>
+                                <p class="mb-2">
+                                    المذاكرة في شكل جماعي تساعد على تكرار وتذكر المعلومات القيمة،
+                                     واختلاف الآراء يتيح فرصة لمعرفة المعلومات الصحيحة والتأكد منها. 
+                                </p>
+                            </div><!-- end media-body -->
+                        </div><!-- end media -->
+                        <!-- start media -->
+                        <div class="media">
+                            <img class="d-flex align-self-start ml-3" src="images/time.png"
+                                alt="Generic placeholder image">
+                            <!-- start media-body -->
+                            <div class="media-body">
+                                <h5 class="mt-0">
+                                    يصلك هدية مع أول طلب عبر التطبيق
+                                </h5>
+                                <p class="mb-2">
+                                    هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحة ما سيلهي القارئ
+                                </p>
+                            </div><!-- end media-body -->
+                        </div><!-- end media -->
+                        <!-- start media -->
+                        <div class="media">
+                            <img class="d-flex align-self-start ml-3" src="images/class.png"
+                                alt="Generic placeholder image">
+                            <!-- start media-body -->
+                            <div class="media-body">
+                                <h5 class="mt-0">
+                                    عدم ترك المراجعة الى يوم الامتحان
+                                </h5>
+                                <p class="mb-2">
+                                    يجب على الطالب الدوام على مراجعة الدروس والمناهج 
+                                    الدراسية المقررة أولًا بأول حتى لا تكون عبئًا على عاتقه.
+                                </p>
+                            </div><!-- end media-body -->
+                        </div><!-- end media -->
+                    </div><!-- end options -->
+                </div><!-- end col -->
+                <!-- start col -->
+                <div class="col-lg-5 order-lg-1 col-md-5 order-md-1">
+                    <!-- start images -->
+                    <div class="images">
+                        <img src="images/adv.png" alt="app-img" />
+                    </div><!-- end images -->
+                </div><!-- end col -->
+            </div><!-- end row -->
+        </div><!-- end container -->
+    </section>
+
+      <footer>
+        <div class="copyright text-center">
+          <p>جميع الحقوق محفوظة 2022</p>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>

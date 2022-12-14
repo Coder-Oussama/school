@@ -1,0 +1,320 @@
+@import './variables';
+@import './student.scss';
+@import './account.scss';
+
+
+
+
+body {
+  font-family: "cairoFont";
+}
+a:hover {
+  text-decoration: none !important;
+}
+
+.top-menu {
+  .navbar {
+    position: fixed;
+    z-index: 4;
+    font-weight: bold;
+    padding: 0px 100px !important;
+    background-color: #fff !important;
+    border-bottom: 2px solid $main-color;
+    // .login:hover {
+    //   background-color: #fff;
+    //   color: $main-color !important;
+    // }
+    .navbar-brand {
+      img {
+        padding-top: 0 !important;
+        padding-bottom: 0 !important;
+      }
+    }
+    .navbar-nav {
+      font-size: 23px;
+
+      li > a {
+        transition-property: background-color;
+        transition-duration: 0.5s;
+        &:hover  {
+          color: $main-color !important;
+          background-color: $custom-color !important;
+          padding-top: 8px;
+          padding-bottom: 8px;
+          border-radius: 3px;
+          border-bottom: 2px solid $main-color !important;
+        }
+      }
+    }
+  }
+}
+
+.carousel-top {
+  margin-top: 70px !important;
+  .row {
+    display: block !important;
+  }
+  .carousel {
+    .carousel-item {
+      img {
+        height: 500px;
+      }
+      .overlay {
+        position: absolute;
+        background-color: rgba(65, 155, 155, 0.5);
+        top: 0;
+        right: 0;
+        height: 100%;
+        width: 100%;
+        display: flex !important;
+        flex-flow: column;
+        align-items: center;
+        justify-content: center;
+        z-index: 1;
+      }
+      .carousel-caption {
+        h1 {
+          color: white;
+          margin-bottom: 50px;
+          // font-family: 'cairoFont' !important;
+        }
+        h4 {
+          width: 60%;
+          color: $custom-color;
+        }
+      }
+    }
+    .carousel-indicators {
+      li {
+        width: 15px;
+        height: 15px;
+        border-radius: 50%;
+        margin: 20px 5px 0px 0px;
+        &.active {
+          background-color: $main-color !important;
+        }
+      }
+    }
+  }
+}
+
+section.Activities {
+  position: relative;
+  text-align: right;
+  padding: 35px 0;
+  border-bottom: 4px solid #e6e6e6;
+  h2 {
+    margin-bottom: 50px;
+    font-size: 45px;
+    color: #555;
+    text-align: center;
+  }
+  .media {
+    border: 4px solid #e6e6e6;
+    padding: 40px 10px;
+    margin-bottom: 20px;
+    position: relative;
+    max-height: 190px;
+    text-align: right;
+    img {
+      width: 150px !important;
+      height: 100px !important;
+    }
+    .media-body {
+      text-align: center;
+      h5 {
+        font-size: 30px;
+        color: #555;
+      }
+      p {
+        font-size: 17px;
+        line-height: 25px;
+        color: #9c9c9c;
+      }
+    }
+  }
+  div[class*="col-"]:nth-child(even) {
+    text-align: center;
+  }
+}
+
+section.student {
+  background-color: #007bff;
+  padding: 35px 0 50px !important;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  text-align: right;
+  border-bottom: 4px solid #e6e6e6;
+  h1 {
+    margin-bottom: 50px;
+    font-size: 45px;
+    color: #fff;
+    text-align: center;
+  }
+  #student-carousel {
+    a.carousel-control-next {
+      position: absolute;
+      left: 5%;
+      color: #252222;
+      width: 0;
+    }
+
+    a.carousel-control-prev {
+      position: absolute;
+      right: 6%;
+      color: #252222;
+      width: 0;
+    }
+    .carousel-inner {
+      .carousel-item {
+        .card {
+          img {
+            width: 100%;
+          }
+          .card-body {
+            .custom-button {
+              margin-top: 10px;
+              margin-left: auto;
+              margin-right: auto;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+section.stars {
+  padding: 35px 0;
+  border-bottom: 4px solid #e6e6e6;
+
+  h2 {
+    font-size: 45px;
+    color: #555;
+    text-align: center;
+  }
+  .custom-student {
+    img {
+      width: 130px;
+      height: 130px;
+      border-radius: 50%;
+    }
+  }
+}
+
+section.contacts {
+  padding: 35px 0;
+  h2 {
+    font-size: 45px;
+    color: #555;
+    text-align: center;
+  }
+
+  .contact-us {
+    form {
+      .form-group {
+        margin-bottom: 8px;
+        input,
+        textarea {
+          border-radius: 3px;
+          background-color: #fff;
+          font-size: 18px;
+          line-height: 35px;
+          color: #000;
+          font-family: "cairoFont";
+          text-align: right !important;
+        }
+      }
+      button {
+        font-size: 18px;
+        color: #ffffff;
+        background-color: $main-color;
+        font-family: "cairoFont";
+        padding: 7px 24px;
+        border: none !important;
+        border-radius: 5px;
+      }
+      .error {
+        color: red;
+      }
+    }
+  }
+
+  ul.contact-us {
+    li {
+      margin-bottom: 35px;
+      font-size: 22px;
+      color: #676767;
+      &:last-of-type {
+        margin-bottom: 0px;
+      }
+      svg {
+        width: 25px;
+        height: 35px;
+        text-align: center;
+        line-height: 15px;
+        border-radius: 2px;
+        color: $main-color !important;
+        margin-left: 20px;
+        vertical-align: -0.5em;
+      }
+    }
+  }
+}
+
+footer {
+  .copyright {
+    background-color: $main-color;
+  }
+  p {
+    font-size: 25px;
+    line-height: 78px;
+    color: #fff;
+    margin-bottom: 0;
+  }
+}
+
+@media (max-width: 991px) {
+  .top-menu {
+    .navbar {
+      padding: 0px 20px !important;
+      .navbar-nav {
+        a {
+          border-bottom: none !important;
+          padding-right: 5px;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 767px) {
+  .carousel-top {
+    .carousel {
+      .carousel-caption {
+        h1 {
+          font-size: 30px;
+        }
+        h4 {
+          font-size: 20px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 991px) and (min-width: 767px) {
+  section.Activities {
+    .media {
+      .media-body {
+        h5 {
+          font-size: 22px;
+        }
+        p {
+          font-size: 14px;
+          line-height: 14px;
+        }
+      }
+    }
+  }
+}
