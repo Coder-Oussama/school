@@ -1,18 +1,7 @@
 @import "./variables";
+@import "./mixin.scss";
 
 section.account {
-  padding: 70px 0 0;
-  background-color: #f8f8f8;
-  z-index: -2;
-  position: relative;
-  text-align: right;
-  h3 {
-    font-size: 30px;
-    font-weight: bold;
-    text-align: right;
-    color: #555;
-    margin-top: 80px;
-    margin-bottom: 15px;
-    margin-right: 70px;
-  }
+  @include Main-Page-sections(right,140px,none);
+  @include Student-Page($bg-color);
 }

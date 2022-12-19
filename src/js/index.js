@@ -2,12 +2,12 @@ import '@laylazi/bootstrap-rtl/dist/js/bootstrap.min.js'
 import '@laylazi/bootstrap-rtl/dist/css/bootstrap-rtl.min.css'
 import 'jquery/dist/jquery.min.js'
 import 'popper.js/dist/popper.min.js'
-// import 'jquery-validation/dist/jquery.validate'
-// import "jquery-validation/dist/localization/methods_es_CL.min.js";
+import 'jquery-validation/dist/jquery.validate'
+import "jquery-validation/dist/localization/methods_es_CL.min.js";
 import '../sass/style.scss'
 import "@fortawesome/fontawesome-free/js/all.min";
 
-
+$("input").disabled = false;
 
 
 console.log("hello Webpack");
@@ -23,7 +23,7 @@ $(document).ready(function () {
   });
 
 
-//   $(function () {
-//     $("#commentForm").validate();
-//   });
+  $(function () {
+    $("#commentForm").validate();
+  });
 });

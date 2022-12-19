@@ -1,6 +1,7 @@
 @import './variables';
 @import './student.scss';
 @import './account.scss';
+@import './mixin.scss';
 
 
 
@@ -99,10 +100,7 @@ a:hover {
 }
 
 section.Activities {
-  position: relative;
-  text-align: right;
-  padding: 35px 0;
-  border-bottom: 4px solid #e6e6e6;
+  @include Main-Page-sections(right,35px,4px solid #e6e6e6);
   h2 {
     margin-bottom: 50px;
     font-size: 45px;
@@ -139,13 +137,11 @@ section.Activities {
 }
 
 section.student {
+  @include Main-Page-sections(right,35px,4px solid #e6e6e6);
   background-color: #007bff;
-  padding: 35px 0 50px !important;
+  padding-bottom: 50px !important;
   margin-left: auto;
   margin-right: auto;
-  position: relative;
-  text-align: right;
-  border-bottom: 4px solid #e6e6e6;
   h1 {
     margin-bottom: 50px;
     font-size: 45px;
@@ -186,8 +182,7 @@ section.student {
 }
 
 section.stars {
-  padding: 35px 0;
-  border-bottom: 4px solid #e6e6e6;
+  @include Main-Page-sections(right,35px ,4px solid #e6e6e6);
 
   h2 {
     font-size: 45px;
@@ -195,6 +190,12 @@ section.stars {
     text-align: center;
   }
   .custom-student {
+    border-bottom: 4px solid #e6e6e6;
+      @include Student-Page($bg-color);
+    &:last-of-type{
+      border-bottom: none;
+      @include Student-Page(#fff);
+    }
     img {
       width: 130px;
       height: 130px;
@@ -204,7 +205,7 @@ section.stars {
 }
 
 section.contacts {
-  padding: 35px 0;
+@include Main-Page-sections(right,35px,4px solid #e6e6e6);
   h2 {
     font-size: 45px;
     color: #555;
@@ -252,11 +253,11 @@ section.contacts {
       svg {
         width: 25px;
         height: 35px;
-        text-align: center;
+        text-align: right !important;
         line-height: 15px;
         border-radius: 2px;
         color: $main-color !important;
-        margin-left: 20px;
+        margin-left: 10px;
         vertical-align: -0.5em;
       }
     }
@@ -287,6 +288,18 @@ footer {
       }
     }
   }
+  section.contacts{
+    ul.contact-us {
+    li {
+      font-size: 18px;
+    }
+    svg{
+      width: 20px;
+      height: 30px;
+      margin-left: 10px;
+    }
+    }
+  }
 }
 @media (max-width: 767px) {
   .carousel-top {
@@ -301,20 +314,13 @@ footer {
       }
     }
   }
-}
-
-@media (max-width: 991px) and (min-width: 767px) {
-  section.Activities {
-    .media {
-      .media-body {
-        h5 {
-          font-size: 22px;
-        }
-        p {
-          font-size: 14px;
-          line-height: 14px;
-        }
-      }
+  section.contacts{
+    ul.contact-us {
+      margin-top: 10px;
     }
   }
 }
+
+// @media (max-width: 991px) and (min-width: 767px) {
+  
+// }

@@ -1,24 +1,16 @@
 @import "./variables";
+@import "./mixin.scss";
 
 .studentField {
+  @include Main-Page-sections(right,40px,none);
   position: relative;
   width: 100% !important;
-  text-align: right;
-  padding: 40px 0 !important;
   margin-top: 70px !important;
-  background-color: $bg-color;
-  h3 {
-    font-size: 40px;
-    font-weight: bold;
-    color: #555;
-    margin-right: 20px;
-  }
+  @include Student-Page($bg-color)
 }
 
 .StudyTitle {
-  position: relative;
-  text-align: right;
-  padding: 40px 0 !important;
+  @include Main-Page-sections(right,40px,none);
   margin-top: 10px !important;
   background-color: $bg-color;
   h3 {
@@ -34,11 +26,10 @@
 }
 
 section.option {
-  padding: 70px 0 0;
+  @include Main-Page-sections(right,70px,none);
+  padding-bottom:  0 !important;
   background-color: #f8f8f8;
   z-index: -2;
-  position: relative;
-  text-align: right;
    h3 {
     font-size: 40px;
     font-weight: bold;
@@ -57,8 +48,7 @@ section.option {
   }
   .media {
     margin-bottom: 60px;
-  }
-  h5 {
+      h5 {
     font-size: 30px;
     line-height: 40px;
     color: #141414;
@@ -68,14 +58,35 @@ section.option {
     line-height: 20px;
     color: #757474;
   }
+  }
+
 }
 
+
+
 @media (max-width: 990px) and (min-width: 768px) {
+  .studentField{
+    .card{
+      .card-img{
+        height: 100% !important;
+      }
+    }
+  }
   section.option {
     padding: 40px 0 0;
     .options {
-      .media {
-        margin-bottom: 30px;
+      .images{
+        bottom: auto;
+        top: 0;
+      }
+    }
+    .media {
+      margin-bottom: 30px;
+      h5{
+        font-size: 25px;
+      }
+      p{
+        font-size: 17px;
       }
     }
   }
@@ -91,7 +102,14 @@ section.option {
     }
   }
 }
-
+@media (max-width: 767px){
+  section.option{
+    .images{
+      display: none;
+      margin-bottom: 0 !important;
+    }
+  }
+}
 @media (max-width: 575px) {
   section.option {
     .images {

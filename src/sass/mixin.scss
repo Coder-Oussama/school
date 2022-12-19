@@ -1,0 +1,16 @@
+@mixin Main-Page-sections($pos, $dim ,$border) {
+  position: relative;
+  text-align: $pos;
+  padding: $dim 0;
+  border-bottom:$border ;
+}
+
+@mixin Student-Page($bgcolor) {
+  h3 {
+    font-size: 40px;
+    font-weight: bold;
+    color: #555;
+    margin-right: 20px;
+  }
+  background-color: $bgcolor;
+}
